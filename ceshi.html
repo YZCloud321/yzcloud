@@ -1,1 +1,64 @@
-<a herf="javascript:;" data-video="https://cloud.hygame660.top/jc.mp4" class="btn_play" title="播放"></a>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>点击图片弹出视频</title>
+
+</head>
+
+<body>
+
+ 
+
+<img id="testimg" src="https://cloud.hygame660.top/ys.png" alt="图片" width="100px" height="100px" style="cursor: pointer">
+
+ 
+
+<div id="videobox" style="width: 500px; height: 500px; border: 1px solid #ddd; position: fixed; top: 50%; margin-top: -250px; left: 50%; margin-left: -250px; z-index: 999; display: none">
+
+    <span id="closex" style="position: absolute; right: 0; top: 0; z-index: 1000; display: block; width: 20px; line-height: 20px; text-align: center; cursor: pointer">x</span>
+
+    <video id="video" width="500px" height="500px" src="https://cloud.hygame660.top/jc.mp4"></video>
+
+</div>
+
+ 
+
+<script type="text/javascript">
+
+var testimg = document.getElementById('testimg');
+
+var videobox = document.getElementById('videobox');
+
+var closex  = document.getElementById('closex');
+
+ 
+
+testimg.onclick = function()
+
+{
+
+    videobox.style.display = 'block';
+
+}
+
+ 
+
+closex.onclick = function()
+
+{
+
+    videobox.style.display = 'none';
+
+}
+
+</script>
+
+</body>
+
+</html>
